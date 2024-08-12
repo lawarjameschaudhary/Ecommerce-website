@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'laiber-font': 'Inter, sans-serif'
+        'laiber-font': '"Inter", sans-serif',
+        'fanta' : '"Edu VIC WA NT Beginner", cursive'
       }
     },
   },
