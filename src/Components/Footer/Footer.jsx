@@ -1,66 +1,70 @@
-import React from 'react'
+import React from 'react';
 
 const Footer = () => {
   return (
-    <div className='flex justify-around bg-blue-500  text-white p-24 font-fanta'>
-        {/* <div className='flex  justify-between'> */}
-            <div className="megamart">
-                <h1 className='text-5xl font-extrabold'>Demo site</h1>
-                <div className="contact-us mt-8 flex flex-col gap-5">
-                    <h1 className='text-3xl'>Contact Us</h1>
-                    <div className="whatsapp flex gap-2 items-center">
-                        <div className="image">
-                        <img src="./src/assets/whatsapp.png" alt="whatsapp" className='w-8' />
-                        </div>
-                        <div className="text">
-                            <h1 className='font-extralight'>+977 9824273887</h1>
-                        </div>
-                    </div>
-                    <div className="call flex gap-2 items-center">
-                        <div className="image">
-                        <img src="./src/assets/call.png" alt="whatsapp" className='w-8' />
-                        </div>
-                        <div className="text">
-                            <h1 className='font-extralight'><a href="tel:+977 9824273887">+977 9824273887</a></h1>
-                        </div>
-                    </div>
-                    <div className="gmail flex items-center gap-2">
-                        <div className="image">
-                        <img src="./src/assets/new.png" alt="whatsapp" className='w-8 bg-white rounded-md' />
-                        </div>
-                        <div className="text text-xl">
-                            <h1><a href="mailto:lawarjames67929@gmail.com">lawarjames67929@gmail.com</a></h1>
-                        </div>
-                    </div>
-                </div>
+    <div className='bg-blue-500 text-white p-6 md:p-12 lg:p-24 font-fanta'>
+      <div className='flex flex-col md:flex-row justify-around'>
+        <div className="megamart w-full md:w-1/3">
+          <h1 className='text-3xl md:text-4xl lg:text-5xl font-extrabold'>Demo site</h1>
+          <div className="contact-us mt-8 flex flex-col gap-5">
+            <h2 className='text-xl md:text-2xl lg:text-3xl'>Contact Us</h2>
+            <div className="whatsapp flex gap-2 items-center">
+              <div className="image">
+                <img src="./src/assets/whatsapp.png" alt="whatsapp" className='w-6 md:w-8' />
+              </div>
+              <div className="text">
+                <h3 className='font-light text-sm md:text-base lg:text-lg'>+977 9824273887</h3>
+              </div>
             </div>
-            <div className="most-popular-catagories">
-                <h1 className='border-b-2 border-white p-2 text-3xl'>Most popular catagories</h1>
-                <div className='mt-5  ml-9 '>
-                    <ul className='list-disc flex flex-col gap-2 tex-xl'>
-                        <li>Staples</li>
-                        <li>Mobile phone</li>
-                        <li>Laptops</li>
-                        <li>Accessories</li>
-                        <li>Cover</li>
-                    </ul>
-                </div>
+            <div className="call flex gap-2 items-center">
+              <div className="image">
+                <img src="./src/assets/call.png" alt="call" className='w-6 md:w-8' />
+              </div>
+              <div className="text">
+                <h3 className='font-light text-sm md:text-base lg:text-lg'>
+                  <a href="tel:+9779824273887">+977 9824273887</a>
+                </h3>
+              </div>
             </div>
-            <div className="customer-service">
-                <h1 className='border-b-2 border-white p-2 text-3xl'>Customer service</h1>
-                <div className='mt-5 text- ml-9'>
-                    <ul className='list-disc flex flex-col tex-xl gap-2'>
-                        <li>About Us</li>
-                        <li>Terms & Condition</li>
-                        <li>Privacy & Policy</li>
-                        <li>FAQ</li>
-                        <li>Cover</li>
-                    </ul>
-                </div>
-            {/* </div> */}
+            <div className="gmail flex items-center gap-2">
+              <div className="image">
+                <img src="./src/assets/new.png" alt="gmail" className='w-6 md:w-8 bg-white rounded-md' />
+              </div>
+              <div className="text text-sm md:text-base lg:text-xl">
+                <h3>
+                  <a href="mailto:lawarjames67929@gmail.com">lawarjames67929@gmail.com</a>
+                </h3>
+              </div>
+            </div>
+          </div>
         </div>
+        <div className="most-popular-categories w-full md:w-1/3 mt-8 md:mt-0">
+          <h2 className='border-b-2 border-white p-2 text-xl md:text-2xl lg:text-3xl'>Most popular categories</h2>
+          <div className='mt-5'>
+            <ul className='list-disc flex flex-col gap-2 text-sm md:text-base lg:text-xl ml-5'>
+              <li>Staples</li>
+              <li>Mobile phones</li>
+              <li>Laptops</li>
+              <li>Accessories</li>
+              <li>Covers</li>
+            </ul>
+          </div>
+        </div>
+        <div className="customer-service w-full md:w-1/3 mt-8 md:mt-0">
+          <h2 className='border-b-2 border-white p-2 text-xl md:text-2xl lg:text-3xl'>Customer service</h2>
+          <div className='mt-5'>
+            <ul className='list-disc flex flex-col gap-2 text-sm md:text-base lg:text-xl ml-5'>
+              <li>About Us</li>
+              <li>Terms & Conditions</li>
+              <li>Privacy Policy</li>
+              <li>FAQ</li>
+              <li>Covers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

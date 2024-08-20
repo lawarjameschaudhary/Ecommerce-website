@@ -18,7 +18,7 @@ const CartCard = (props) => {
   return (
     <div className=" shadow w-80 border">
       <div>
-        <img className="h-full" src={props.data.thumbnail} />
+        <img className="h-[300px] w-full" src={props.data.thumbnail} />
       </div>
 
       <div className="p-3 shadow-2xl gap-5 shadow-blue-black">

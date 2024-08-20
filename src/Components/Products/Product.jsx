@@ -15,7 +15,7 @@ const Product = () => {
    <div>
      <div className='flex flex-wrap justify-center gap-12 items-center py-12'>
      {products.map((item, index) => {
-          return <ProductCard data={item} key={index} />;
+          return <ProductCard data={item} key={index}/>;
         })}
     </div>
    </div>
