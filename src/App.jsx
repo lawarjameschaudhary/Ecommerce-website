@@ -28,7 +28,7 @@ function App() {
         <Route path='admin/edit/:id' element={<Editproduct />} />
       </Routes>
     </div>
-    <Footer />
+    {location.pathname !== "/login" && <Footer />}
    </div>
   )
 }

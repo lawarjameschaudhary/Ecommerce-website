@@ -2,7 +2,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className='bg-blue-500 text-white p-6 md:p-12 lg:p-24 font-fanta'>
+    <div>
+      <div className='bg-blue-500 text-white p-6 md:p-12 lg:p-24 font-fanta'>
       <div className='flex flex-col md:flex-row justify-around'>
         <div className="megamart w-full md:w-1/3">
           <h1 className='text-3xl md:text-4xl lg:text-5xl font-extrabold'>Demo site</h1>
@@ -63,6 +64,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
+    </div>
+    <div className='bg-slate-50 flex justify-center py-2'>
+      <h1 className='font-extralight text-gray-500'>&copy; Created by | Lawar James Chaudahry</h1>
+    </div>
     </div>
   );
 }

@@ -13,7 +13,7 @@ useEffect(() => {
   fetchCartdata();
 },[]);
   return (
-    <div className='flex  flex-wrap gap-20 justify-center mt-14'>
+    <div className='flex  flex-wrap gap-20 justify-center mt-28 pb-5'>
       {cartdata.length === 0 ? (
         <div className='mt-[100px]'>
           No items in the cart

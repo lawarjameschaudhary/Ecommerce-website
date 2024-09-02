@@ -8,12 +8,13 @@ const Product = () => {
     const data = await response.json();
     setProducts(data);
   } 
+  
   useEffect(() => {
     getProduct();
   },[]);
   return (
    <div>
-     <div className='flex flex-wrap justify-center gap-12 items-center py-12'>
+     <div className='flex flex-wrap justify-center gap-8 md:gap-12 items-center py-12'>
      {products.map((item, index) => {
           return <ProductCard data={item} key={index}/>;
         })}
